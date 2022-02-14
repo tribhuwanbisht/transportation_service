@@ -1,0 +1,58 @@
+body {
+  background: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  /* color: #888; */
+  color: white;
+  line-height: 28px;
+  text-align: center;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+/* Top content  */
+.top-content h1 {
+  margin-top: 75px;
+  font-size: 50px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  /* color: #555; */
+  line-height: 48px;
+}
+
+.top-content p {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+/* Main content  */
+select:not(:-internal-list-box) {
+  overflow: visible !important;
+}
+.container {
+  margin-top: 100px;
+}
+
+.form-control {
+  margin-top: 30px;
+}
+
+/* .left-side .col-sm-4 p {
+  font-size: 100px;
+} */
+
+.btn {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.modal {
+  color: black;
+}
