@@ -32,12 +32,13 @@ if($row1 > 0 || $row2 > 0){
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="css/card_new.css"
+    />
         <title>Document</title>
         <style>
-          body{
-            height: 100vh;
-          background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
-          }
+          
           .container{
             padding-left: 30%;
             padding-right: 30%;
@@ -48,7 +49,7 @@ if($row1 > 0 || $row2 > 0){
       <body >
         <div class="container">
         <form action="otp_verify.php" method="POST" class="form">
-          <span class="text-center font-weight-bold" style="margin-left: 90px; font-size: x-large;">ENTER OTP</span>
+          <span class="text-center font-weight-bold"   style="margin-left: 90px; font-size: x-large;color: floralwhite">ENTER OTP</span>
           <input type="text" name="otp" class="form-control" />
           <button type="submit" class="btn btn-dark" style="margin-left: 110px; margin-top: 10px;">VERIFY</button>
         </form>

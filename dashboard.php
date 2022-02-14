@@ -74,7 +74,7 @@ $num=mysqli_num_rows($result);
     <div class="top-content row">
       <div class="col-md-11">
           <?php
-        echo '<h1 class="text-left" style="display: inline">Welcome ,'.$dealer_name.'</h1>';
+        echo '<h1 class="text-left" style="display: inline ;color: #5596a1">Welcome ,'.$dealer_name.'</h1>';
         ?>
       </div>
       <div class="col-md-1">
@@ -164,7 +164,7 @@ $num=mysqli_num_rows($result);
             <br />
             <div class="row">
               <table class="table table-hover table-striped">
-                <thead>
+                <thead style="color: cornflowerblue">
                   <tr>
                     <th>Name</th>
                     <th>Mobile Number</th>
@@ -173,7 +173,7 @@ $num=mysqli_num_rows($result);
                     <th>Book</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style="color: aliceblue">
 
                 <?php
                 if (isset($_POST['route1_city_from'])) {
@@ -337,9 +337,12 @@ else{
 
 $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_assoc($result);
+$num=mysqli_num_rows($result);
+if ($num>0){
 $dealer_id=$row['dealer_id'];
 $sql2="SELECT * FROM `goods_transportation_service`.`dealers` WHERE dealer_id='$dealer_id'";
 $result2=mysqli_query($conn,$sql2);
+}
 // $row2=mysqli_fetch_assoc($result2);
 
 
@@ -366,7 +369,7 @@ $result2=mysqli_query($conn,$sql2);
 <div class="top-content row">
       <div class="col-md-11">
           <?php
-        echo '<h2 class="text-left" style="display: inline">Welcome ,'.$driver_name.'</h2>';
+        echo '<h2 class="text-left" style="display: inline ;color: #5596a1">Welcome ,'.$driver_name.'</h2>';
         ?>
       </div>
       <div class="col-md-1">
@@ -375,9 +378,10 @@ $result2=mysqli_query($conn,$sql2);
 </div>
 <br><br>
 <div class="main">
-    <h2>Dealers that have booked for your service</h2>
+    <h2 style="color: floralwhite">Dealers that have booked for your service</h2>
+    <br><br>
     <table class="table table-hover table-striped">
-                <thead>
+                <thead style="color: #5596a1">
                   <tr>
                     <th>Name</th>
                     <th>Mobile Number</th>
@@ -387,9 +391,10 @@ $result2=mysqli_query($conn,$sql2);
                     <th>Quantity</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style="color: floralwhite">
 
                 <?php
+                if($num>0){
                 while($row2=mysqli_fetch_assoc($result2))
                 {
                 echo'  <tr>
@@ -402,6 +407,7 @@ $result2=mysqli_query($conn,$sql2);
                     
                   </tr>';
                 }
+              }
                  ?> 
                 </tbody>
               </table>

@@ -1,6 +1,12 @@
 body {
   font-family: "Nunito", sans-serif;
   padding: 40px;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
 }
 .card {
   border-radius: 4px;
